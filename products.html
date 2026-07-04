@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — SilentPip Labs</title>
+<meta name="description" content="Phantom9er and Slipstream Expert Advisors, plus custom indicator and EA builds.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="assets/logo-icon.svg" alt="" width="26" height="26" style="vertical-align:-6px; margin-right:8px;">Silent<span>Pip</span> Labs</a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="setup-service.html">Setup Service</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="setup-service.html" class="nav-cta">Book Setup</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom: 30px;">
+  <div class="container">
+    <span class="eyebrow">Products</span>
+    <h1>Expert Advisors &amp; Indicators</h1>
+    <p class="lead">Built and tested by the person selling them. Status and numbers below are current, not marketing copy.</p>
+  </div>
+</section>
+
+<section style="padding-top: 20px;">
+  <div class="container">
+
+    <div class="risk-banner">
+      <strong>Risk disclosure:</strong> Forex trading carries substantial risk of loss and is not suitable for every investor.
+      Past or short-term test results (including the numbers shown below) do not guarantee future performance.
+      Only trade with capital you can afford to lose.
+    </div>
+
+    <!-- Phantom9er -->
+    <div id="phantom9er" class="product-card mt-40">
+      <div class="product-top">
+        <div>
+          <div class="product-title">Phantom9er</div>
+          <div class="price">$47 <span>one-time / Beta Access</span></div>
+        </div>
+        <span class="badge badge-beta">Beta</span>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat">
+          <div class="num">+20%</div>
+          <div class="label">Return, 3-day live test</div>
+        </div>
+        <div class="stat">
+          <div class="num neutral">MT5</div>
+          <div class="label">Platform</div>
+        </div>
+      </div>
+
+      <p>Phantom9er is an Expert Advisor currently in live testing. Three days in, it's up 20%. That's a real early result, not a verified long-term track record — Beta Access pricing reflects that. Buyers at this stage get the EA now, at a lower price, while the track record is still being built.</p>
+
+      <p>
+        <a href="https://www.fxblue.com/users/Phantom9er" target="_blank" rel="noopener noreferrer" style="color: var(--orange); font-weight: 600;">
+          See live results on FXBlue →
+        </a>
+        <br><span style="color: var(--text-faint); font-size: 13px;">Independent, third-party verified — not self-reported numbers.</span>
+      </p>
+
+      <ul class="feature-list">
+        <li>Delivered as an MT5 EA file, sent by email after purchase (usually within 24 hours)</li>
+        <li>Installation instructions included</li>
+        <li>Beta buyers get free updates as the EA is refined</li>
+      </ul>
+
+      <div class="disclaimer">
+        3 days of live testing is a small sample. Results can and will change as testing continues. This is sold as a Beta product at a Beta price — not a finished, proven system.
+      </div>
+
+      <div class="btn-row mt-24">
+        <!-- TODO: replace with real Stripe Payment Link from your Stripe dashboard -->
+        <a href="https://buy.stripe.com/REPLACE_WITH_PHANTOM9ER_LINK" class="btn btn-primary">Buy with Card — $47</a>
+        <!-- TODO: replace with your PayPal.me link or hosted button, e.g. https://paypal.me/yourbusiness/47 -->
+        <a href="https://paypal.me/REPLACE_ME/47" class="btn btn-outline">Pay with PayPal</a>
+      </div>
+    </div>
+
+    <!-- Slipstream -->
+    <div id="slipstream" class="product-card mt-40">
+      <div class="product-top">
+        <div>
+          <div class="product-title">Slipstream</div>
+        </div>
+        <span class="badge badge-soon">Coming Soon</span>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat">
+          <div class="num neutral">2 / 3</div>
+          <div class="label">Trades won in testing</div>
+        </div>
+        <div class="stat">
+          <div class="num neutral">MT5</div>
+          <div class="label">Platform</div>
+        </div>
+      </div>
+
+      <p>Slipstream is still in testing. It's won 2 of 3 trades so far, and the bug behind the losing trade has been found and fixed. It's not for sale yet. Join the list below and you'll be the first to know when it's ready, plus get early pricing when it launches.</p>
+
+      <form data-waitlist-form>
+        <div class="email-capture">
+          <input type="email" placeholder="you@email.com" required>
+          <button type="submit" class="btn btn-primary">Join List</button>
+        </div>
+        <p data-form-msg style="display:none; color: var(--text-muted); font-size: 13px; margin-top: 10px;"></p>
+      </form>
+    </div>
+
+    <!-- Custom work -->
+    <div class="card mt-40 text-center">
+      <h3>Need something built for your own strategy?</h3>
+      <p>Send the logic and rules — entries, exits, risk management — and I'll quote a custom EA or indicator build.</p>
+      <a href="contact.html" class="btn btn-outline">Request a Custom Build</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> SilentPip Labs. Part of the Silent brand.</div>
+    <div class="footer-links">
+      <a href="products.html">Products</a>
+      <a href="setup-service.html">Setup Service</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
